@@ -1,0 +1,224 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PDFDataExtractionSequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:s1="clr-namespace:System;assembly=mscorlib" xmlns:s2="clr-namespace:System;assembly=System" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities" xmlns:sae="clr-namespace:System.Activities.Expressions;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sas="clr-namespace:System.Activities.Statements;assembly=System.Activities" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sc1="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Diagnostics;assembly=System" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sd3="clr-namespace:System.Diagnostics;assembly=System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sd4="clr-namespace:System.Drawing;assembly=System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" xmlns:sd5="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:si="clr-namespace:System.IO;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sx="clr-namespace:System.Xml;assembly=System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sxl="clr-namespace:System.Xml.Linq;assembly=System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:uc="clr-namespace:UiPath.Core;assembly=UiPath.System.Activities" xmlns:uc1="clr-namespace:UiPath.Core;assembly=UiPath.UiAutomation.Activities" xmlns:uca="clr-namespace:UiPath.Core.Activities;assembly=UiPath.System.Activities" xmlns:uca1="clr-namespace:UiPath.Core.Activities;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Out_TextData" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_contactNo" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_License" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Recepit" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_AnimalIdNo" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_PhoneNo" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_DocDate" Type="OutArgument(x:String)" />
+    <x:Property Name="In_Out_path" Type="InOutArgument(sd:Process)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>396,1816</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PDFDataExtractionSequence" sap:VirtualizedContainerService.HintSize="376,1756" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg1:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg1:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="Assign 'path variable to start process to open image file'" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:Process">[In_Out_path]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:Process" xml:space="preserve">[Process.Start("C:\Users\k.RAM  babu\Documents\UiPath\Image_OCRText_Extraction\Image OCR\Capture.PNG")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'TextData'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" Profile="Scan" Text="[Out_TextData]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="fe0feb0177f1ca0c1e42e2a43a8d4391" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="867, 249, 240, 117" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'Contact Number'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_2">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_2" Image="[Image]" Profile="Scan" Text="[Out_contactNo]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="63bd45bc0589905e7d7b75e38886c0fa" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="241, 247, 296, 24" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'License'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_3" Image="[Image]" Profile="Scan" Text="[Out_License]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="5ceeba6fb3ca5e44548794b47677eaf7" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="241, 301, 292, 28" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'Recepit'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_4" Image="[Image]" Profile="Scan" Text="[Out_Recepit]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="345fef4fcc498377af9ee9491c9083fc" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="244, 363, 307, 25" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'AnimalIdNo'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_5">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_5" Image="[Image]" Profile="Scan" Text="[Out_AnimalIdNo]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="d17f0e477019d6cef101f3cb15341c1c" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="243, 408, 312, 24" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'PhoneNo'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_6" Image="[Image]" Profile="Scan" Text="[Out_PhoneNo]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="d64baff60c6429f4078a418d9aebb6f8" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="220, 505, 106, 22" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'DocDate'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd5:Image, scg1:IEnumerable(scg1:KeyValuePair(sd5:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd5:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_7" Image="[Image]" Profile="Scan" Text="[Out_DocDate]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target Element="{x:Null}" InformativeScreenshot="1545e9600e6ff92cd3206aeab8516007" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Capture.PNG' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="660, 506, 71, 20" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <ui:CloseApplication DisplayName="Close Application 'Image Application'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+      <ui:CloseApplication.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b3f9b9dccd8d3fe1a7bd51896c3260f0" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:CloseApplication.Target>
+    </ui:CloseApplication>
+  </Sequence>
+</Activity>
