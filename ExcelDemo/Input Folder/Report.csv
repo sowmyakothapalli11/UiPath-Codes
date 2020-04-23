@@ -1,0 +1,12 @@
+SL No.,Order Date,Sales Order no.,Customer name,Shipment Location,Order Qty ,Delivery Date ,SKU/ Item no. ,QTY To Produce,Days to Produce,days between order date and deliver date,Risk or NoRisk
+1,18-09-2019,1000,Natco Pharma,Hyderabad,150000,25-10-2019,GB2000,,,,
+2,18-09-2019,1001,Roche,Mumbai,720000,20-10-2019,GB2001,,,,
+3,18-09-2019,1002,Novartis,Hyderabad,50000,30-12-2019,GB2015,,,,
+4,18-09-2019,1003,Google,Ahmedabad,75000,25-11-2019,FD2012,,,,
+5,18-09-2019,1004,Microsoft,Delhi,13000,25-10-2019,GB2000,,,,
+6,18-09-2019,1005,Pepsi,Mathura,250000,20-10-2019,GB2001,,,,
+7,18-09-2019,1006,Limca,Pune,300000,30-12-2019,GB2015,,,,
+8,18-09-2019,1007,Dr Reddys,Hyderabad,2000000,25-11-2019,FD2013,,,,
+9,18-09-2019,1008,Coca Cola,Hyderabad,1500000,25-10-2019,GB2000,,,,
+10,18-09-2019,1009,Nice Jam,Nagpur,35000,20-10-2019,GB2001,,,,
+11,18-09-2019,1010,Priya Pickles,Chennai,400000,30-12-2019,GB2015,,,,

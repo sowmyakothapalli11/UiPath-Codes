@@ -1,0 +1,1182 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="402.666666666667,5137.33333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="22">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="18">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="382.666666666667,5077.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_CITable1" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_SFTable1" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="Order_Qty_list1" />
+      <Variable x:TypeArguments="s:Int32[]" Name="Order_Qty_array_col1" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="Inventory_list1" />
+      <Variable x:TypeArguments="s:Int32[]" Name="Inventory_array_col1" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="order_count" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="count" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="QTYToProduce_list" />
+      <Variable x:TypeArguments="s:Int32[]" Name="QTYToProduce_arry" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_RTable" />
+      <Variable x:TypeArguments="x:String" Name="strr" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="count_row_update" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="CapacityPerShift_list" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_PCTable" />
+      <Variable x:TypeArguments="s:Int32[]" Name="CapacityPerShift_array" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="CapacityPerDay_list" />
+      <Variable x:TypeArguments="s:Int32[]" Name="CapacityPerDay_array" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="count_Days_toProduce" />
+      <Variable x:TypeArguments="s:Int32[]" Name="Days_toProduce_array" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="DaysToProduce_list" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="Days_toProduce_count" />
+      <Variable x:TypeArguments="scg:List(s:DateTime)" Name="Order_date_List" />
+      <Variable x:TypeArguments="scg:List(s:DateTime)" Name="delivery_date_List" />
+      <Variable x:TypeArguments="s:DateTime[]" Name="Order_date_array" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="count10" />
+      <Variable x:TypeArguments="s:DateTime[]" Name="deliver_date_array" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="daystodeliver_time" />
+      <Variable x:TypeArguments="x:Int32" Name="daystodelive_int" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="daystodeliver_list" />
+      <Variable x:TypeArguments="s:Int32[]" Name="daystodeliver_array" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="count11" />
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="riskdays_list" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="count12" />
+      <Variable x:TypeArguments="x:Int32" Name="riskdays_int" />
+      <Variable x:TypeArguments="x:String" Name="riskfield" />
+      <Variable x:TypeArguments="s:Int32[]" Name="riskdays_array" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="340.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="510.666666666667,161.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Sales Forecat Sequence" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_SFTable" />
+              <Variable x:TypeArguments="scg:List(x:Int32)" Name="Order_Qty_list" />
+              <Variable x:TypeArguments="s:Int32[]" Name="Order_Qty_array_col" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_NewTable" />
+              <Variable x:TypeArguments="x:String" Name="out_table" />
+              <Variable x:TypeArguments="x:String" Name="strdtout" />
+              <Variable x:TypeArguments="sd:DataRow" Name="dr1" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_CITable" />
+              <Variable x:TypeArguments="scg:List(x:Int32)" Name="Inventory_list" />
+              <Variable x:TypeArguments="s:Int32[]" Name="Inventory_array_col" />
+              <Variable x:TypeArguments="sd:DataRow" Name="dr_Inventory" />
+              <Variable x:TypeArguments="sd:DataRow" Name="dr" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_NewTable2" />
+              <Variable x:TypeArguments="x:String" Name="strdtout2" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dtjoin1" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_CITable]" Delimitator="Comma" DisplayName="Current Inventory Read CSV" FilePath="CURRENT INVENTORY.csv" sap:VirtualizedContainerService.HintSize="426.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="ReadCsvFile_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ReadCsvFile>
+            <ui:BuildDataTable DataTable="[DT_NewTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="426.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Order_x0020_Qty&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:BuildDataTable DataTable="[DT_NewTable2]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="426.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Inventory&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_SFTable]" Delimitator="Comma" DisplayName="Sales Forecast Read CSV" FilePath="SALES FORECAST.csv" sap:VirtualizedContainerService.HintSize="426.666666666667,52" sap2010:WorkflowViewState.IdRef="ReadCsvFile_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ReadCsvFile>
+            <Assign sap:VirtualizedContainerService.HintSize="426.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_34">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:Int32)">[Order_Qty_list]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(of Int32)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SFTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="426.666666666667,468" sap2010:WorkflowViewState.IdRef="ForEachRow_10">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Order_Qty_row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Order_Qty_str_val" />
+                      <Variable x:TypeArguments="x:Int32" Name="Order_Qty_int_val" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_35">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Order_Qty_str_val]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[Order_Qty_row(5).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_36">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[Order_Qty_int_val]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[CInt(Order_Qty_str_val)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <AddToCollection x:TypeArguments="x:Int32" Collection="[Order_Qty_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_6" Item="[Order_Qty_int_val]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <Assign sap:VirtualizedContainerService.HintSize="426.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_37">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:Int32[]">[Order_Qty_array_col]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:Int32[]">[Order_Qty_list.ToArray]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="426.666666666667,454" sap2010:WorkflowViewState.IdRef="ForEach`1_12" Values="[Order_Qty_array_col]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="Order_Qty_item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Sales Forecast Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_38">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="sd:DataRow">[dr]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="sd:DataRow">[DT_NewTable.NewRow]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_39">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[dr("Order Qty")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[Order_Qty_item]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[dr]" DataTable="[DT_NewTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddDataRow_11" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <Assign sap:VirtualizedContainerService.HintSize="426.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_28">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:Int32)">[Inventory_list]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(of Int32)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_CITable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="426.666666666667,566.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Inventory_row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,415.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Order_Qty_str_val" />
+                      <Variable x:TypeArguments="x:Int32" Name="Order_Qty_int_val" />
+                      <Variable x:TypeArguments="x:String" Name="Inventory_str_val" />
+                      <Variable x:TypeArguments="x:Int32" Name="Inventory_int_val" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_29">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Inventory_str_val]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[Inventory_row(1).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_30">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[Inventory_int_val]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[CInt(Inventory_str_val)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_20" Text="[Inventory_int_val]" TopMost="True" />
+                    <AddToCollection x:TypeArguments="x:Int32" Collection="[Inventory_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_5" Item="[Inventory_int_val]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <Assign sap:VirtualizedContainerService.HintSize="426.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_31">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:Int32[]">[Inventory_array_col]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:Int32[]">[Inventory_list.ToArray]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="426.666666666667,454" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[Inventory_array_col]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="Inventory_item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Inventory for each Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_32">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="sd:DataRow">[dr_Inventory]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="sd:DataRow">[DT_NewTable2.NewRow]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_33">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[dr_Inventory("Inventory")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[Inventory_item]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[dr_Inventory]" DataTable="[DT_NewTable2]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddDataRow_10" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <ui:OutputDataTable DataTable="[DT_NewTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="426.666666666667,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_5" Text="[strdtout]" />
+            <ui:OutputDataTable DataTable="[DT_NewTable2]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="426.666666666667,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_6" Text="[strdtout2]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="426.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_19" Text="[strdtout]" TopMost="True" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="426.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_21" Text="[strdtout2]" TopMost="True" />
+            <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[DT_NewTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="sku_item.csv" sap:VirtualizedContainerService.HintSize="426.666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_CITable1]" Delimitator="Comma" DisplayName="Current Inventory Read CSV" FilePath="Input Folder\CURRENT INVENTORY.csv" sap:VirtualizedContainerService.HintSize="340.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ReadCsvFile_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadCsvFile>
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_SFTable1]" Delimitator="Comma" DisplayName="Sales Forecast Read CSV" FilePath="Input Folder\SALES FORECAST.csv" sap:VirtualizedContainerService.HintSize="340.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ReadCsvFile_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadCsvFile>
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_RTable]" Delimitator="Comma" DisplayName="Report Read CSV" FilePath="Input Folder\Report.csv" sap:VirtualizedContainerService.HintSize="340.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ReadCsvFile_10">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadCsvFile>
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_PCTable]" Delimitator="Comma" DisplayName="Production Capacity Read CSV" FilePath="Input Folder\PRODUCTION CAPACITY.csv" sap:VirtualizedContainerService.HintSize="340.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ReadCsvFile_11">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadCsvFile>
+    <Assign DisplayName="Order_Qty_list Assign" sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_40">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[Order_Qty_list1]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SFTable1]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_11">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Order_Qty_row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Order_Qty_str_val" />
+              <Variable x:TypeArguments="x:Int32" Name="Order_Qty_int_val" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_41">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Order_Qty_str_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Order_Qty_row(5).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_42">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[Order_Qty_int_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(Order_Qty_str_val)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[Order_Qty_list1]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_7" Item="[Order_Qty_int_val]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_43">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[Order_Qty_array_col1]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[Order_Qty_list1.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_44">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[Inventory_list1]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_CITable1]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_12">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Inventory_row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_29">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Order_Qty_str_val" />
+              <Variable x:TypeArguments="x:Int32" Name="Order_Qty_int_val" />
+              <Variable x:TypeArguments="x:String" Name="Inventory_str_val" />
+              <Variable x:TypeArguments="x:Int32" Name="Inventory_int_val" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_45">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Inventory_str_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Inventory_row(1).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_46">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[Inventory_int_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(Inventory_str_val)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[Inventory_list1]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_8" Item="[Inventory_int_val]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_47">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[Inventory_array_col1]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[Inventory_list1.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_49">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[order_count]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[Order_Qty_list1.Count]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_50">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[count]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_53">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[QTYToProduce_list]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="340.666666666667,454" sap2010:WorkflowViewState.IdRef="ForEach`1_16" Values="[Order_Qty_list1]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:Int32">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_33">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="scg:List(x:Int32)" Name="new_list" />
+              <Variable x:TypeArguments="x:Int32" Name="new_item" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_52">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[new_item]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[item-Inventory_list1(count)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_51">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[count]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[count+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[QTYToProduce_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_9" Item="[new_item]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_54">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[QTYToProduce_arry]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[QTYToProduce_list.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_57">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[count_row_update]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_RTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_35">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_56">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row("QTY To Produce")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[QTYToProduce_arry(count_row_update)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_58">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[count_row_update]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[count_row_update+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_59">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[CapacityPerShift_list]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_PCTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_14">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CapacityPerShift_row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_36">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Order_Qty_str_val" />
+              <Variable x:TypeArguments="x:Int32" Name="Order_Qty_int_val" />
+              <Variable x:TypeArguments="x:String" Name="CapacityPerShift_str_val" />
+              <Variable x:TypeArguments="x:Int32" Name="CapacityPerShift_int_val" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_60">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[CapacityPerShift_str_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CapacityPerShift_row(3).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_61">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[CapacityPerShift_int_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(CapacityPerShift_str_val)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[CapacityPerShift_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_10" Item="[CapacityPerShift_int_val]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_62">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[CapacityPerShift_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[CapacityPerShift_list.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_64">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[CapacityPerDay_list]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEach`1_20" Values="[CapacityPerShift_array]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:Int32">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,215.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_37">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="CapacityPerday_val" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_63">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[CapacityPerday_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[item*3]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[CapacityPerDay_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_12" Item="[CapacityPerday_val]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_65">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[CapacityPerDay_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[CapacityPerDay_list.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_66">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[count_Days_toProduce]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_73">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[DaysToProduce_list]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEach`1_23" Values="[QTYToProduce_list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:Int32">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,316.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_39">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="DaysToProduce_val" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_67">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[DaysToProduce_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(item/CapacityPerDay_list(count_Days_toProduce))]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[DaysToProduce_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_14" Item="[DaysToProduce_val]" />
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_70">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[count_Days_toProduce]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[count_Days_toProduce+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_74">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[Days_toProduce_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[DaysToProduce_list.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_75">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[Days_toProduce_count]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_RTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_16">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_41">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_71">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row("Days to Produce")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[Days_toProduce_array(Days_toProduce_count)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_76">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[Days_toProduce_count]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[Days_toProduce_count+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_82">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(s:DateTime)">[Order_date_List]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(s:DateTime)">[New List(Of date)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_79">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(s:DateTime)">[delivery_date_List]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(s:DateTime)">[New List(Of date)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_RTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="order_delivery_date_row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,581.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_42">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Order_Qty_str_val" />
+              <Variable x:TypeArguments="x:Int32" Name="Order_Qty_int_val" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="Order_date_str_val" />
+              <Variable x:TypeArguments="s:DateTime" Name="Order_date_int_val" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="delivery_date_str_val" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="delivery_date_int_val" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_77">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[Order_date_str_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[order_delivery_date_row(1).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_91">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:DateTime">[Order_date_int_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(Order_date_str_val,“dd-MM-yyyy”,System.Globalization.CultureInfo.CurrentUICulture.DateTimeFormat)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="s:DateTime" Collection="[Order_date_List]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_19" Item="[Order_date_int_val]" />
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_85">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[delivery_date_str_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[order_delivery_date_row(6).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_89">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[delivery_date_int_val]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[DateTime.ParseExact(delivery_date_str_val,“dd-MM-yyyy”,System.Globalization.CultureInfo.CurrentUICulture.DateTimeFormat)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="s:DateTime" Collection="[delivery_date_List]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_20" Item="[delivery_date_int_val]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_86">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime[]">[Order_date_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime[]">[Order_date_List.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_92">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime[]">[deliver_date_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime[]">[delivery_date_List.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_93">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[count10]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_97">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[daystodeliver_list]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="s:DateTime" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEach`1_29" Values="[Order_date_array]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="s:DateTime">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="s:DateTime" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,418" sap2010:WorkflowViewState.IdRef="Sequence_46">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_95">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[daystodeliver_time]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[deliver_date_array(count10).Subtract(item)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_96">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[daystodelive_int]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(daystodeliver_time.Split("."c)(0))]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[daystodeliver_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_21" Item="[daystodelive_int]" />
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_94">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[count10]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[count10+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_98">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[daystodeliver_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[daystodeliver_list.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_100">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[count11]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_RTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_18">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_47">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_99">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row("days between order date and deliver date")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[daystodeliver_array(count11)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_101">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ui:GenericValue">[count11]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ui:GenericValue">[count11+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_102">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Int32)">[riskdays_list]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEach`1_31" Values="[Days_toProduce_array]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:Int32">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,215.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_49">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_104">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[riskdays_int]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[daystodeliver_array(count12)-item]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <AddToCollection x:TypeArguments="x:Int32" Collection="[riskdays_list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_22" Item="[riskdays_int]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_108">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[riskdays_array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]">[riskdays_list.ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="340.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_109">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:GenericValue">[count12]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_RTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="340.666666666667,52" sap2010:WorkflowViewState.IdRef="ForEachRow_19">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,498.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_53">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[riskdays_array(count12) &lt; 0]" sap:VirtualizedContainerService.HintSize="654,406.666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="304,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_111">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[row("Risk or NoRisk")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">["Risk"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_110">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="ui:GenericValue">[count12]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="ui:GenericValue">[count12+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="304,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_112">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[row("Risk or NoRisk")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">["NoRisk"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_113">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="ui:GenericValue">[count12]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="ui:GenericValue">[count12+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[DT_RTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="result folder\Report.csv" sap:VirtualizedContainerService.HintSize="340.666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteCsvFile>
+  </Sequence>
+</Activity>
