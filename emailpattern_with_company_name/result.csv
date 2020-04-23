@@ -1,0 +1,623 @@
+Name	Original Company Name	Original Pattern	Check Company Name	Check Email Pattern
+ James Broadhead  	Santander UK 	jane.doe@santander.co.uk	Santander UK 	jane.doe@santander.co.uk
+ Richard Curto  	Highmark Health 	jane.doe@highmark.com	Highmark Health 	jane.doe@highmark.com
+ Mark Shivers  	BNY Mellon 	jane.doe@bnymellon.com	BNY Mellon 	jane.doe@bnymellon.com
+ Robert Kesterton  	Jaguar Land Rover 	jdoe@jaguarlandrover.com	Jaguar Land Rover 	jdoe@jaguarlandrover.com
+ Larry Rider  	First Data Corporation 	jane.doe@firstdata.com	First Data Corporation 	jane.doe@firstdata.com
+Robert Schneider	First Data Corporation	jane.doe@firstdata.com	First Data Corporation	jane.doe@firstdata.com
+ Sumeet Pathak  	Societe Generale Global Solution Centre 		Wells Fargo 	jane.doe@wellsfargo.com
+ Olamide Adegbesote  	Wells Fargo 	jane.doe@wellsfargo.com	U.S. Bank 	jane.doe@usbank.com
+ Matt Neff  	U.S. Bank 	jane.doe@usbank.com	Credit Suisse 	jane.doe@credit-suisse.com
+ Alpesh Patel  	Credit Suisse 	jane.doe@credit-suisse.com	University Hospitals Birmingham NHS Foundation Trust 	�jane.doe@uhb.nhs.uk
+ Kerrie Wilkins  	University Hospitals Birmingham NHS Foundation Trust 	�jane.doe@uhb.nhs.uk	Bank of America 	jane.doe@bankofamerica.com
+ Darren Atkins  	East Suffolk and North Essex NHS Foundation Trust 		Swiss Re 	jane_doe@swissre.com
+ Murali Kannan Santhana Krishnan  	Bank of America 	jane.doe@bankofamerica.com	Northern Trust Corporation 	jane.doe@northerntrust.com
+ Jose Ordinas Lewis  	Swiss Re 	jane_doe@swissre.com	BMO Financial Group 	jane.doe@bmo.com
+ Reni Varghese  	Northern Trust Corporation 	jane.doe@northerntrust.com	Voya Financial 	jdoe@voya.com
+ Sehr Saghir  	BMO Financial Group 	jane.doe@bmo.com	"Stanley Black & Decker, Inc. "	jane.doe@stanleyblackanddecker.com
+ Brian Cruess  	Voya Financial 	jdoe@voya.com	Prudential Financial 	jane.doe@prudential.com
+ Matthew Searle  	Credit Suisse 	jane.doe@credit-suisse.com	MassMutual 	jdoe@massmutual.com
+ Ryan Rickards  	"Stanley Black & Decker, Inc. "	jane.doe@stanleyblackanddecker.com	Centene Corporation 	jdoe@centene.com
+" Debanshu Debroy, MBA  "	Prudential Financial 	jane.doe@prudential.com	Vodafone 	jane.doe@vodafone.com
+ Ida Grochowska  	MassMutual 	jdoe@massmutual.com	First Data 	jane.doe@firstdata.com
+ Jeff Miller  	Wells Fargo 	jane.doe@wellsfargo.com	Royal Mail 	jane@royalmail.com
+ John M. Cometa  	Centene Corporation 	jdoe@centene.com	Vodafone Global Enterprise 	jane.doe@vodafone.com
+ Yogesh Swami  	Vodafone 	jane.doe@vodafone.com	Travelers 	jdoe@travelers.com
+ Corey Voorhees  	First Data 	jane.doe@firstdata.com	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com
+ David Wood  	Nationwide Building Society 		TD 	jane.doe@td.com
+ Neale Jarrett  	Royal Mail 	jane@royalmail.com	Citi 	jane.doe@citigroup.com
+ Anuprita Abhyankar  	Vodafone Global Enterprise 	jane.doe@vodafone.com	Lloyds Banking Group 	jane.doe@lloydsbanking.com
+ Sebastian Antony  	Barclaycard 		PNC 	jane.doe@pnc.com
+ Brenton Harder  	BNY Mellon 	jane.doe@bnymellon.com	Dignity Health 	jane.doe@dignityhealth.org
+ Betsy Gauthier  	Travelers 	jdoe@travelers.com	Lincoln Financial Group 	jane.doe@lfg.com
+" Praful Mainker, CFA, PMP  "	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com	"Re:Sources, A Publicis Groupe Company "	jane.doe@publicisgroupe.com
+ Manavpreet Thiara  	TD 	jane.doe@td.com	American Express 	janedoe@americanexpress.com
+ Prashanth Alevoor  	Dürr 		TMG Health 	jdoe@tmghealth.com
+ Daniel Bergin  	Citi 	jane.doe@citigroup.com	Ciox Health 	jane.doe@cioxhealth.com
+ Gerald Pullen  	Lloyds Banking Group 	jane.doe@lloydsbanking.com	Capital One 	jane.doe@capitalone.com
+ Jasbir Gill  	Lloyds Banking Group 	jane.doe@lloydsbanking.com	Citizens Bank 	jdoe@citizensebank.com
+ Scott Kinross  	PNC 	jane.doe@pnc.com	Bank of America Merrill Lynch 	jane.doe@baml.com
+ Chris Chapman  	Dignity Health 	jane.doe@dignityhealth.org	Crawford & Company 	jane_doe@us.crawco.com
+ Ramana Sunder  	Lincoln Financial Group 	jane.doe@lfg.com	AT&T 	jane.doe@att.com
+ Sumita Narang  	"Re:Sources, A Publicis Groupe Company "	jane.doe@publicisgroupe.com	Ally 	jane.doe@ally.com
+ Marcelo Pagnotta  	American Express 	janedoe@americanexpress.com	CVS Health 	jane.doe@cvshealth.com
+ Kevin Myers  	TMG Health 	jdoe@tmghealth.com	New York Life Insurance Company 	jane_doe@newyorklife.com
+ Srikanth Pothineni  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com	Toyota Kirloskar Motor 	jane_doe@toyota-kirloskar.co.in
+ Paul Roma  	Ciox Health 	jane.doe@cioxhealth.com	Virgin Media 	janedoe@virginmedia.com
+ Bobby Love  	Capital One 	jane.doe@capitalone.com	Ericsson 	jane.doe@ericsson.com
+ Jarrod Anderson  	Wells Fargo 	jane.doe@wellsfargo.com	CNA Insurance 	jane.doe@cna.com
+ Thomas Dixon  	Citizens Bank 	jdoe@citizensebank.com	Bank of the West 	jane.doe@bankofthewest.com
+ Richard Barker  	PNC 	jane.doe@pnc.com	Verizon Wireless 	jane.doe@verizonwireless.com
+ Prasanna Gopalakrishnan  	Bank of America Merrill Lynch 	jane.doe@baml.com	Nokia 	jane.doe@nokia.com
+ Hilton Sturisky  	Crawford & Company 	jane_doe@us.crawco.com	Comerica Bank 	janedoe@comerica.com
+ TereLyn E. Hepple PMP® SSYB PSM PSPO  	AT&T 	jane.doe@att.com	R1 RCM 	jdoe@r1rcm.com
+ Kashminder Chahil  	Wells Fargo 	jane.doe@wellsfargo.com	Synechron 	jane.doe@synechron.com
+ Scott Richardson  	Ally 	jane.doe@ally.com	State Street 	janedoe@statestreet.com
+ Alok Bothra  	Capital One 	jane.doe@capitalone.com	Edward Jones 	jane.doe@edwardjones.com
+ Eric T. Parks  	CVS Health 	jane.doe@cvshealth.com	Charles Schwab 	jane.doe@schwab.com
+ John Taylor  	New York Life Insurance Company 	jane_doe@newyorklife.com	Liberty Global 	jdoe@libertyglobal.com
+ Madifing Kaba  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com	BNP Paribas Corporate and Institutional Banking 	jane.doe@bnpparibas.com
+ Ryan Davis  	Bank of America 	jane.doe@bankofamerica.com	Mizuho 	jdoe@mizuho.com
+ Richard Davis  	Lloyds Banking Group 	jane.doe@lloydsbanking.com	Abzooba Inc. 	jane.doe@abzooba.com
+ William Sirico  	Prudential Financial 	jane.doe@prudential.com	Chubb 	jdoe@chubb.com
+ RaviKiran S Avvaru  	Toyota Kirloskar Motor 	jane_doe@toyota-kirloskar.co.in	John Hancock 	jdoe@jhancock.com
+ Oliver Broom  	Virgin Media 	janedoe@virginmedia.com	Fidelity International 	jane.doe@fidelity.com
+ Bjorn J.  	Ericsson 	jane.doe@ericsson.com	MetLife 	jdoe@metlife.com
+ Joel Schneider  	CNA Insurance 	jane.doe@cna.com	O2 (Telefónica UK) 	jane.doe@o2.com
+ Michael Demissie  	BNY Mellon 	jane.doe@bnymellon.com	Alcatel-Lucent 	jane.doe@alcatel-lucent.com
+ Karl Werwath  	Bank of the West 	jane.doe@bankofthewest.com	ADP 	jane_doe@ADP.com
+ Ramki Muthukrishnan  	Verizon Wireless 	jane.doe@verizonwireless.com	HSBC Global Banking and Markets 	jane.doe@hsbcib.com
+ Chris DeBrusk  	BNY Mellon 	jane.doe@bnymellon.com	Société Générale 	jane.doe@socgen.com
+ Anurag Vishnoi  	Nokia 	jane.doe@nokia.com	"Santander Bank, N.A. "	jane.doe@santander.us
+ Baiju Panicker  	Comerica Bank 	janedoe@comerica.com	Tech Mahindra 	janed@techmahindra.com
+ Brian Barnes  	BrightSpring Health Services 		PwC 	jane.doe@pwc.com
+ Sean Diwan  	R1 RCM 	jdoe@r1rcm.com	Deutsche Bank 	jane.doe@db.com
+ Rajat Patro  	Synechron 	jane.doe@synechron.com	Fidelity Investments 	jane.doe@fidelity.com
+ Jennifer Lake  	State Street 	janedoe@statestreet.com	Optum 	jane.doe@optum.com
+ Ramit Luthra  	Edward Jones 	jane.doe@edwardjones.com	Direct Line Group 	jane.doe@directlinegroup.co.uk
+ Mark Pearson  	First Data Corporation 	jane.doe@firstdata.com	NatWest Markets 	jane.doe@natwest.com
+ Praveen Kumar  	Charles Schwab 	jane.doe@schwab.com	Adient 	jane.doe@adient.com
+ Tarun Bahl  	Charles Schwab 	jane.doe@schwab.com	BT 	jane.doe@bt.com
+ Clive Phelps  	Liberty Global 	jdoe@libertyglobal.com	Nomura 	jane.doe@nomura.com
+ Damodaram Bashyam  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com	American Family Insurance 	jdoe@amfam.com
+" Alicia Melton, CPA  "	New York Life Insurance Company 	jane_doe@newyorklife.com	UBS 	jane.doe@ubs.com
+ Jonathan Holman  	Santander UK 	jane.doe@santander.co.uk	Morgan Stanley 	jane.doe@morganstanley.com
+ Richard Wright  	Citi 	jane.doe@citigroup.com	New York-Presbyterian Hospital 	jdoe@nyp.org
+ Himanshu Baral  	Wells Fargo 	jane.doe@wellsfargo.com	AIG 	jane.doe@aig.com
+ Cyril KORENBEUSSER  	BNP Paribas Corporate and Institutional Banking 	jane.doe@bnpparibas.com	Crédit Agricole CIB 	jane.doe@ca-cib.com
+ Patrick Fay  	Mizuho 	jdoe@mizuho.com	BlackRock 	jane.doe@blackrock.com
+ Arnold Hahamyan  	Nissan North America 		IQVIA 	jane.doe@iqvia.com
+ Rajeev Nair  	Abzooba Inc. 	jane.doe@abzooba.com	CGI 	jane.doe@cgi.com
+ Riaz Abdul  	Chubb 	jdoe@chubb.com	Synchrony 	jane.doe@synchrony.com
+ Navindra James Prem  	Prudential Financial 	jane.doe@prudential.com	Dun & Bradstreet 	doej@dnb.com
+ David Fortier  	John Hancock 	jdoe@jhancock.com	Telstra 	jane.doe@telstra.com.au
+ Jeff C.  	Northern Trust Corporation 	jane.doe@northerntrust.com	7-Eleven 	jane.doe@7-eleven.com
+ Shalabh Bansal  	Fidelity International 	jane.doe@fidelity.com	FIS 	jane.doe@fisglobal.com
+ Manoj Sitapara  	Citi 	jane.doe@citigroup.com	Chase 	jane.doe@jpmorgan.com
+ Eoin O'Reilly  	MetLife 	jdoe@metlife.com	Cardinal Health 	jane.doe@cardinalhealth.com
+ Danny Maylin  	O2 (Telefónica UK) 	jane.doe@o2.com	COUNTRY Financial® 	jane.doe@countryfinancial.com
+ Prashant Vashishtha  	Nokia 	jane.doe@nokia.com	Thermo Fisher Scientific 	jane.doe@thermofisher.com
+ Dhiraj Gurung  	Citi 	jane.doe@citigroup.com	Bajaj Finserv 	jane.doe@bajajfinserv.in
+ Roger A. Novoa  	Alcatel-Lucent 	jane.doe@alcatel-lucent.com	MUFG 	jdoe@us.mufg.jp
+ Tina Singh  	Mahindra Finance 		Ascension 	jdoe@ascensionhealth.org
+ Enid Martinez  	ADP 	jane_doe@ADP.com	Willis Towers Watson 	jane.doe@towerswatson.com
+ Will Dempsey  	HSBC Global Banking and Markets 	jane.doe@hsbcib.com	Harley-Davidson Motor Company 	jane.doe@harley-davidson.com
+ Rajesh Bhasin  	Société Générale 	jane.doe@socgen.com	USAA 	jane.doe@usaa.com
+ Karen Rooney  	Fidelity International 	jane.doe@fidelity.com	Verizon 	jane.doe@verizon.com
+ Ronald Ziegler  	"Santander Bank, N.A. "	jane.doe@santander.us	Brown Brothers Harriman 	jane.doe@bbh.com
+ Arun Menon  	Motilal Oswal Financial Services Ltd 		Presbyterian Healthcare Services 	jdoe@phs.org
+ Sameer Dania  	Tech Mahindra 	janed@techmahindra.com	Fiserv 	jane.doe@fiserv.com
+ Paul Krauss  	Wells Fargo 	jane.doe@wellsfargo.com	Comcast 	janedoe@comcast.com
+ Kevin Kroen  	PwC 	jane.doe@pwc.com	Bharti Airtel Ltd. 	john.smith@airtel.in
+ Ravinder Singh Assi  	Deutsche Bank 	jane.doe@db.com	INDIAN OVERSEAS BANK 	jane@iob.in
+ B K Harish  	Renault-Nissan-Mitsubishi 		Citizens Commercial Banking 	jane.doe@citizensbank.com
+ Rob Zimmerman III  	Fidelity Investments 	jane.doe@fidelity.com	"Anthem, Inc. "	jane.doe@anthem.com
+ Brian Schimke  	Optum 	jane.doe@optum.com	CenturyLink 	jane.doe@centurylink.com
+ Alex Nield  	Direct Line Group 	jane.doe@directlinegroup.co.uk	Inmarsat 	jane_doe@inmarsat.com
+ Adrienne Hill  	American Express 	janedoe@americanexpress.com	YES BANK 	jane.doe@yesbank.in
+ John A. Szabo  	BNY Mellon 	jane.doe@bnymellon.com	Barclays 	jane.doe@barcap.com
+ Himanshu Warudkar  	NatWest Markets 	jane.doe@natwest.com	Thrivent 	jane.doe@thrivent.com
+ Randall Urban  	Adient 	jane.doe@adient.com	HSBC 	janedoe@hsbc.com
+ Jon Hurley  	MFX Services - A Quess Company 		Navient 	jane.doe@navient.com
+ Leonardo Roman  	Prudential Financial 	jane.doe@prudential.com	Takata India Pvt. Ltd. 	jane.doe@takata.com
+ Pankaj Purohit  	Motilal Oswal Financial Services Ltd 		CBRE 	jane.doe@cbre.com
+ Gui Kahl  	Wells Fargo 	jane.doe@wellsfargo.com	HDFC Bank 	jane.doe@hdfcbank.com
+ Dr. Rajesh Premchandran  	BT 	jane.doe@bt.com	DBS Bank 	janedoe@dbs.com
+ Ankur Vatsa  	Nomura 	jane.doe@nomura.com	Barclays Investment Bank 	jane.doe@barclays.com
+ Charanjit Singh Sodhi  	Nomura 	jane.doe@nomura.com	HM Revenue & Customs 	�jane.doe@hmrc.gsi.gov.uk
+ Dean Vocaturo  	American Express 	janedoe@americanexpress.com	Aon 	jane_doe@aon.com
+ Paul Choi  	American Family Insurance 	jdoe@amfam.com	Marsh 	jane.doe@marsh.com
+ Matthew Oakeley  	UBS 	jane.doe@ubs.com	Continental 	jane.doe@continental-corporation.com
+ Ann Callison  	Morgan Stanley 	jane.doe@morganstanley.com	Ericsson India Global Services Ltd 	jane.doe@ericsson.com
+ Florian Quarré  	Ciox Health 	jane.doe@cioxhealth.com	Sandvik 	jane.doe@sandvik.com
+" David Tsay M.D., Ph.D.  "	New York-Presbyterian Hospital 	jdoe@nyp.org	JP Morgan Chase 	jane.doe@jpmorgan.com
+ Mahmood Shah  	MetLife 	jdoe@metlife.com	BNP Paribas 	jane.doe@bnpparibas.com
+ Mike Galloway  	AIG 	jane.doe@aig.com	Brightstar Corp. 	jane.doe@brightstar.com
+ Suzanne Ley  	Crédit Agricole CIB 	jane.doe@ca-cib.com	Comcast Cable 	janedoe@comcast.com
+ Stuart Wilson  	CNA Insurance 	jane.doe@cna.com	Conifer Health Solutions 	jane.doe@coniferhealth.com
+ Dave Koepke  	Ciox Health 	jane.doe@cioxhealth.com	S&P Global 	jane.doe@spglobal.com
+" Alexandra Chtchedrina, CSPO  "	Bank of America Merrill Lynch 	jane.doe@baml.com	"ReedGroup, A Guardian Life Insurance Company "	jane_doe@glic.com
+ Shimon Senderowitz  	BlackRock 	jane.doe@blackrock.com	Movement Mortgage 	�jane.doe@Movement.com
+ Kent Molter  	TD 	jane.doe@td.com	Zurich North America 	jane.doe@zurichna.com
+ Vineet Kumar Bajpai  	IQVIA 	jane.doe@iqvia.com	Advance Auto Parts 	jane.doe@advanceautoparts.com
+ Paul Morris  	CGI 	jane.doe@cgi.com	Tata Communications 	jane.doe@tatacommunications.com
+ Mel Reyes  	Synchrony 	jane.doe@synchrony.com	TATA AutoComp Systems Ltd 	jane.doe@tacogroup.com
+ Christopher Simco  	TD 	jane.doe@td.com	NTT DATA UK 	jane.doe@nttdata.com
+ Nishanth Varanasi  	Comerica Bank 	janedoe@comerica.com	Experian 	jane.doe@experian.com
+ Madlyn Del Monte  	Dun & Bradstreet 	doej@dnb.com	M&T Bank 	jdoe@mtb.com
+ Andy Mather  	Telstra 	jane.doe@telstra.com.au	The Goodyear Tire & Rubber Company 	jane_doe@goodyear.com
+ Subhashini Tripuraneni  	7-Eleven 	jane.doe@7-eleven.com	Capita 	jane.doe@capita.co.uk
+ Bethany Vincent  	FIS 	jane.doe@fisglobal.com	Moody's Analytics 	jane.doe@moodys.com
+" Robert Hach Jr., CISA, CIA, CSM, PMP  "	U.S. Bank 	jane.doe@usbank.com	Mayo Clinic 	janedoe@mayoclinic.com
+ Kate Bowdler  	Lloyds Banking Group 	jane.doe@lloydsbanking.com	Spire Healthcare Group plc 	janedoe@spirehealthcare.com
+ Frédéric Chanfrau  	Citizens Bank 	jdoe@citizensebank.com	Goldman Sachs 	jane.doe@gs.com
+ Soumya Ganguly  	Chase 	jane.doe@jpmorgan.com	Nationwide Insurance 	janedoe@nationwide.com
+ Aleks Walaszek  	PNC 	jane.doe@pnc.com	State Street Corporation 	janedoe@statestreet.com
+ Tim A Cochran  	Cardinal Health 	jane.doe@cardinalhealth.com	Franklin Templeton Investments 	janedoe@franklintempleton.com
+ Pradeep Parvathipuram  	COUNTRY Financial® 	jane.doe@countryfinancial.com	NTT DATA Services 	jane.doe@nttdata.com
+ Ekta Gandhi  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com	Diageo 	jane.doe@diageo.com
+ Toyna J. Chin  	Thermo Fisher Scientific 	jane.doe@thermofisher.com	AXA 	jane.doe@axa.com
+ Karunakar (KK) Kemisetti  	AIG 	jane.doe@aig.com	Liberty Mutual Insurance 	jane.doe@libertymutual.com
+ Sreekanth PV  	Bajaj Finserv 	jane.doe@bajajfinserv.in	HSBC Commercial Banking 	janedoe@hsbc.com
+ Michael Selden  	MUFG 	jdoe@us.mufg.jp	Ford Motor Pvt Ltd. 	janedoe@ford.com
+ Todd Pepmeier  	Ascension 	jdoe@ascensionhealth.org	Ford Motor Company 	janedoe@ford.com
+ Charles Radley  	Willis Towers Watson 	jane.doe@towerswatson.com	Paychex 	jdoe@paychex.com
+ Mike Jones  	Harley-Davidson Motor Company 	jane.doe@harley-davidson.com	Frontier Communications 	janedoe@frontier.com
+ Alan Bohannon  	USAA 	jane.doe@usaa.com	Charter Communications 	janedoe@charter.com
+ Nanda Kumar  	Verizon 	jane.doe@verizon.com	McKesson 	jane.doe@mckesson.com
+ Kevin Maul  	Capital One 	jane.doe@capitalone.com	RBS 	jane.doe@rbs.com
+ Ganesh Bonda  	Bank of America Merrill Lynch 	jane.doe@baml.com	Visa 	janedoe@visa.com
+ Tim Carlson  	Travelers 	jdoe@travelers.com	ANZ 	jane.doe@anz.com
+ Jim Tessmer  	Brown Brothers Harriman 	jane.doe@bbh.com	Equitas Small Finance Bank 	janedoe@equitas.in
+ Andrew Lowe  	Bank of America Merrill Lynch 	jane.doe@baml.com	Allianz 	jane.doe@allianz.com
+ Amy Walter  	Synchrony 	jane.doe@synchrony.com	Barclays Shared Services 	jane.doe@barclays.com
+ Jared Staal  	Presbyterian Healthcare Services 	jdoe@phs.org	QBE Insurance 	jane.doe@qbe.com
+ Pramod Madala  	Fiserv 	jane.doe@fiserv.com	Aviva plc 	jane.doe@aviva.com
+" Barry Nickerson, MBA, CISM, CRISC, CISA  "	Citizens Bank 	jdoe@citizensebank.com	Lear Corporation 	jdoe@lear.com
+" Michael Vizcaino, MBA, PMP  "	Capital One 	jane.doe@capitalone.com	SunTrust 	jane.doe@suntrust.com
+ Vittal Gunturu  	Verizon 	jane.doe@verizon.com	Citibank India 	jane.doe@citi.com
+" Erik Evans, CPA, CGMA  "	Citi 	jane.doe@citigroup.com	Royal Bank of Scotland Business 	jane.doe@rbs.com
+ Kristin Lewandowski  	Comcast 	janedoe@comcast.com	Oracle 	jane.doe@oracle.com
+ K NAGENDRA BHASKAR  	Bharti Airtel Ltd. 	john.smith@airtel.in	J.P. Morgan 	jane.doe@jpmorgan.com
+ Shishir Mishra  	INDIAN OVERSEAS BANK 	jane@iob.in	Omega Healthcare Management Services Private Limited 	jane.doe@omegahms.com
+ Haragouri (Hara) Dash  	PwC 	jane.doe@pwc.com	Aditya Birla Group 	jane.doe@adityabirla.com
+ Brian Wates  	Fidelity Investments 	jane.doe@fidelity.com	Aspen Dental 	janedoe@aspendental.com
+ Ross Pringle  	Citizens Commercial Banking 	jane.doe@citizensbank.com	Houston Methodist 	jdoe@houstonmethodist.org
+ Kiley Paschal  	"Anthem, Inc. "	jane.doe@anthem.com	Jio 	doe@jio.com
+ Brian E. Bond  	CenturyLink 	jane.doe@centurylink.com	Merrill Lynch 	jane_doe@ml.com
+ Dustin Schreiber  	PNC 	jane.doe@pnc.com	SSM Health 	jane.doe@ssmhealth.com
+ Mark Zirbser  	Inmarsat 	jane_doe@inmarsat.com	Wells Fargo - Home Lending 	jane.doe@wellsfargo.com
+ Rajat Grover  	YES BANK 	jane.doe@yesbank.in	Vodafone Idea Limited 	jane.doe@ideacellular.com
+ Sumit Chugh  	Barclays 	jane.doe@barcap.com	John Deere 	janedoe@johndeere.com
+ Peter Anstey  	Openreach 		Axis Bank 	jane.doe@axisbank.com
+ Ricardo Domingues  	Prudential Financial 	jane.doe@prudential.com	UnitedHealth Group 	jane_doe@uhg.com
+ Eric Frankel  	Prudential Financial 	jane.doe@prudential.com	Nokia Bell Labs 	�jane.doe@nokia.com
+ Steven Hedges  	Deutsche Bank 	jane.doe@db.com	Optum (formerly Alere Wellbeing) 	jane.doe@optum.com
+ Tim Anderson  	Thrivent 	jane.doe@thrivent.com	AmericanExpress 	janedoe@americanexpress.com
+ Andrew Pearce  	HSBC 	janedoe@hsbc.com	General Motors 	jane.doe@gm.com
+ Ross Hibbert  	Navient 	jane.doe@navient.com	JPMorgan Chase 	jane.doe@jpmorgan.com
+ Ken Stoneman  	PNC 	jane.doe@pnc.com	Principal Financial Group 	jane@exchange.principal.com
+ Ajay Khankhoje  	Takata India Pvt. Ltd. 	jane.doe@takata.com	Fidelity Business Services Company India Private Limited 	jane.doe@fidelity.com
+ Bhavin Satikunvar  	YES BANK 	jane.doe@yesbank.in	Assurant 	jane.doe@assurant.com
+" Anshul Vikram Pandey, Ph.D.  "	Accern 		Guardian Life 	jane_doe@glic.com
+" Derek Cheung-Lew LSSBB,PMP  "	UBS 	jane.doe@ubs.com	Boston Scientific 	jane.doe@bsci.com
+ Sayee Bellamkonda  	CBRE 	jane.doe@cbre.com	ICICI Bank 	jane.doe@icicibank.com
+ Ramesh Selvaraj  	BNY Mellon 	jane.doe@bnymellon.com	Mizuho Americas 	jdoe@mizuho.com
+ Ajay Gupta  	HDFC Bank 	jane.doe@hdfcbank.com	Munich Re Digital Partners 	jdoe@munichre.com
+ Jitin Hiranandani  	DBS Bank 	janedoe@dbs.com	Northern Trust 	jane.doe@northerntrust.com
+ Ezhilmathi Ramachandran  	Barclays Investment Bank 	jane.doe@barclays.com	SunTrust Bank 	jane.doe@suntrust.com
+ Milind Labhe  	IDFC FIRST Bank 		Securian Financial 	jane.doe@securian.com
+ Richard Forster  	HM Revenue & Customs 	�jane.doe@hmrc.gsi.gov.uk	Georgia State University 	jdoe@gsu.edu
+ Vivek Tripathi  	American Express 	janedoe@americanexpress.com	The Hartford 	jane.doe@thehartford.com
+ Balaji V  	Willis Towers Watson 	jane.doe@towerswatson.com	Henniges Automotive 	jane.doe@hennigesautomotive.com
+ Mariyam Ahmed  	Aon 	jane_doe@aon.com	Capgemini FS GBU 	jane.doe@capgemini.com
+ Jamie Thompson  	Marsh 	jane.doe@marsh.com	Blood Brothers Productions 	jane@blood-brother.co.uk
+ Darlene Taylor  	Novares Group 		Volvo IT 	jane.doe@volvo.com
+ David Atkinson  	Continental 	jane.doe@continental-corporation.com	Citizens Financial Group	jane.doe@citizensbank.com
+ Terry Lang  	Comerica Bank 	janedoe@comerica.com	Standard Chartered Bank 	jane.doe@sc.com
+ Dr. Kuldeep Aima  	Ericsson India Global Services Ltd 	jane.doe@ericsson.com	Mastercard 	jane@mastercard.us
+ Priya Magavi  	Societe Generale Global Solution Centre 		Kaiser Permanente 	jane.doe@kp.org
+ Marc DeZordo  	Dignity Health 	jane.doe@dignityhealth.org	JPMorgan Chase & Co	jane.doe@jpmorgan.com
+ Solomon Avinaash Paul  	HSBC Global Banking and Markets 	jane.doe@hsbcib.com	Idea Cellular Ltd 	jane.doe@ideacellular.com
+ Richard Wiggs  	UBS 	jane.doe@ubs.com	Barclays Corporate Banking 	jane.doe@barclays.com
+ Lee Heintz  	Sandvik 	jane.doe@sandvik.com	Kotak Mahindra Bank Limited	jane.doe@kotak.com
+ Sankar Gopal  	JP Morgan Chase 	jane.doe@jpmorgan.com	Macquarie Group 	jane.doe@macquarie.com
+ Leo ODonnell  	BT 	jane.doe@bt.com	Diebold 	janedoe@diebold.com
+ Santhosh Pasupuleti  	Morgan Stanley 	jane.doe@morganstanley.com	Level 3 Communications 	jane.doe@level3.com
+ Sarah Ragle  	BNP Paribas 	jane.doe@bnpparibas.com	S&P Global Ratings 	jane.doe@spglobal.com
+ Lisa Cottrill  	Wells Fargo 	jane.doe@wellsfargo.com	TIAA 	jdoe@tiaa-cref.org
+ Dave Picking  	Brightstar Corp. 	jane.doe@brightstar.com	Vodafone Idea Ltd 	jane.doe@ideacellular.com
+ Gulrukh Ahanger  	Comcast Cable 	janedoe@comcast.com	Royal Bank of Scotland 	jane.doe@rbs.com
+ Anu Kalia  	Barclays 	jane.doe@barcap.com	Sogeti 	jane.doe@sogeti.com
+ Michael Bokros  	Conifer Health Solutions 	jane.doe@coniferhealth.com	Price Waterhouse India 	jane.doe@pwc.com
+ David Oesterreich  	American Express 	janedoe@americanexpress.com	Barclays Technology Center India 	jane.doe@barclays.com
+ Georgina Rooke  	HSBC 	janedoe@hsbc.com	Tata Motors 	jane.doe@tatamotors.com
+ Chintan Pandya  	S&P Global 	jane.doe@spglobal.com	Dentsu Aegis Network 	jane.doe@dentsuaegis.com
+ Pranay Butala  	"ReedGroup, A Guardian Life Insurance Company "	jane_doe@glic.com	Sabre Corporation 	jane.doe@sabre.com
+ Sergio Antonio Salas Martinez  	Movement Mortgage 	�jane.doe@Movement.com	Indus Towers Limited 	jane.doe@industowers.com
+" LaDan Vahebi, PMP, ACP, CSM, DSSGB, ITIL  "	Zurich North America 	jane.doe@zurichna.com	Citigroup 	jane.doe@citigroup.com
+ Kevin DeLillo  	Advance Auto Parts 	jane.doe@advanceautoparts.com	Investec 	jane.doe@investec.co.uk
+ Hiren Desai  	Continental 	jane.doe@continental-corporation.com	Adani Group 	jane.doe@adani.com
+ Anand Cheruvanky  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com	Bloomberg LP 	jdoe@bloomberg.net
+ Matthew Trager  	Lloyds Banking Group 	jane.doe@lloydsbanking.com	BBVA 	jane.doe@bbva.com
+ Vikas Jain  	American Express 	janedoe@americanexpress.com	Tata Motors Group 	jane.doe@tatamotors.com
+ Rajarshi Purkayastha  	Tata Communications 	jane.doe@tatacommunications.com	Conduent 	jane.doe@conduent.com
+ Kevin Wilkins  	Travelers 	jdoe@travelers.com	Zurich Insurance Company Ltd 	jane.doe@zurich.com
+ Sandeep Puri  	Capital One 	jane.doe@capitalone.com	Gallagher Service Center LLP 	jane_doe@ajg.com
+ Santosh Cheekatla  	Citi 	jane.doe@citigroup.com	Tesla 	jdoe@teslamotors.com
+ Adi P.  	HSBC 	janedoe@hsbc.com	Freedom Mortgage 	jane.doe@freedommortgage.com
+ Srinivasa Chinnam  	Citi 	jane.doe@citigroup.com	RB 	jane@rb.com
+ Sudipto Marjit  	TATA AutoComp Systems Ltd 	jane.doe@tacogroup.com	RSA 	jane.doe@uk.rsagroup.com
+ R. Matthew Shenk  	PNC 	jane.doe@pnc.com	ANZ Bank 	jane.doe@anz.com
+ Chris Wild  	NTT DATA UK 	jane.doe@nttdata.com	Equifax 	jane.doe@equifax.com
+ Eric Seidel  	PNC 	jane.doe@pnc.com	EDAG India 	jane.doe@edag.de
+ Neil Latham  	Experian 	jane.doe@experian.com	Western Digital 	jane.doe@wdc.com
+ Saptadeep Basu  	HSBC 	janedoe@hsbc.com	Kawasaki Robotics 	janedoe@kawasaki.com
+ Russell Burgstahler  	M&T Bank 	jdoe@mtb.com	Axis Bank Ltd 	jane.doe@axisbank.com
+ Marc Borowczak  	The Goodyear Tire & Rubber Company 	jane_doe@goodyear.com	RTI 	jdoe@rti.org
+ Becky Horsey  	Capita 	jane.doe@capita.co.uk	Aditya Birla Sun Life Insurance 	jane.doe@adityabirlacapital.com
+ Brian J. Dickerson  	Xome 		Comau 	�jane.doe@comau.com
+ Thillai P.  	Verizon 	jane.doe@verizon.com	Cigna 	jane.doe@cigna.com
+ Jagdish Dhobley (Technology Executive)  	Moody's Analytics 	jane.doe@moodys.com	AMS-INDIA 	jane.doe@ams.com
+ Kay Hysell  	Mayo Clinic 	janedoe@mayoclinic.com	HDFC Life Insurance Company Ltd 	janedoe@hdfclife.com
+ Denis Lafitte  	Spire Healthcare Group plc 	janedoe@spirehealthcare.com		
+ Nash S.  	Verizon Wireless 	jane.doe@verizonwireless.com		
+ Luther Sewell  	Citi 	jane.doe@citigroup.com		
+ Ed Barth  	Citizens Bank 	jdoe@citizensebank.com		
+ Tushar Desai  	Goldman Sachs 	jane.doe@gs.com		
+ Christian Davis  	Direct Line Group 	jane.doe@directlinegroup.co.uk		
+" Nick Aliff, CPA  "	Nationwide Insurance 	janedoe@nationwide.com		
+ PURUSH Thirumala  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Ashwin Mahajan  	Bank of America 	jane.doe@bankofamerica.com		
+" Sreehari Rayavarapu, MS, MBA  "	State Street Corporation 	janedoe@statestreet.com		
+" Don Beharry, CPA, CA  "	Franklin Templeton Investments 	janedoe@franklintempleton.com		
+ Joel Arnold  	Travelers 	jdoe@travelers.com		
+ Jay Paandya  	NTT DATA Services 	jane.doe@nttdata.com		
+ Karthik J .  	Diageo 	jane.doe@diageo.com		
+ Steve Dunadee  	BNY Mellon 	jane.doe@bnymellon.com		
+ Dhruval Shah  	AT&T 	jane.doe@att.com		
+ Rahul Jain  	Swiss Re 	jane_doe@swissre.com		
+ Rahul (RD)  	Tata Communications 	jane.doe@tatacommunications.com		
+ Jon Alderton  	Direct Line Group 	jane.doe@directlinegroup.co.uk		
+ Binit Jha  	UBS 	jane.doe@ubs.com		
+ David Bennett  	AXA 	jane.doe@axa.com		
+ Scott Weber  	M&T Bank 	jdoe@mtb.com		
+ Kurt Schoenberg  	Wells Fargo 	jane.doe@wellsfargo.com		
+" John Lemmer III, CPCU  "	Liberty Mutual Insurance 	jane.doe@libertymutual.com		
+ Jeff Machols  	Voya Financial 	jdoe@voya.com		
+ Krishnan Gangadhar  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Lee Norwood-Green  	HSBC Commercial Banking 	janedoe@hsbc.com		
+ Amlan Bose  	Ford Motor Pvt Ltd. 	janedoe@ford.com		
+ Sourabh Deb  	Citi 	jane.doe@citigroup.com		
+ Ajay Maddula  	Ford Motor Company 	janedoe@ford.com		
+ Carolyn Dobie  	Paychex 	jdoe@paychex.com		
+ Kaushal Thakker  	Frontier Communications 	janedoe@frontier.com		
+ Upendra Kumar Rai  	YES BANK 	jane.doe@yesbank.in		
+ Shailav Bansal  	American Express 	janedoe@americanexpress.com		
+ Himanshu Mittal  	American Express 	janedoe@americanexpress.com		
+ Chris Sznopek  	Charter Communications 	janedoe@charter.com		
+ Anthony Stahley  	PNC 	jane.doe@pnc.com		
+ Nupur Mukherjee Yelisetty  	HSBC 	janedoe@hsbc.com		
+ Mark Gomez  	USAA 	jane.doe@usaa.com		
+ Danial Khan  	McKesson 	jane.doe@mckesson.com		
+" Cyndi Creamer CPCU, ARe  "	Swiss Re 	jane_doe@swissre.com		
+ Kate L.  	PNC 	jane.doe@pnc.com		
+ Apurv Bhargava  	RBS 	jane.doe@rbs.com		
+ Anish Hindocha  	Visa 	janedoe@visa.com		
+ Venkataraman S V  	ANZ 	jane.doe@anz.com		
+" Adrian Chong (CA, CRISC, CISA, Prince2 Pract)  "	Wells Fargo 	jane.doe@wellsfargo.com		
+ Bryan Rego  	Citizens Bank 	jdoe@citizensebank.com		
+ Vishwa N.  	Equitas Small Finance Bank 	janedoe@equitas.in		
+ Praveen Sasidharan  	Allianz 	jane.doe@allianz.com		
+ James Kaminski  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Shah Bari  	AT&T 	jane.doe@att.com		
+ Srikanth Doraiswamy  	MassMutual 	jdoe@massmutual.com		
+ Rabik Nathan  	Barclays 	jane.doe@barcap.com		
+ Saravanan Nanjankannan  	State Street 	janedoe@statestreet.com		
+ Amit Nehra  	Barclays Shared Services 	jane.doe@barclays.com		
+ Ray Webster  	QBE Insurance 	jane.doe@qbe.com		
+ Mike Zirkle  	Verizon 	jane.doe@verizon.com		
+ Mark Whitby  	Aviva plc 	jane.doe@aviva.com		
+ Roxanna W.  	UBS 	jane.doe@ubs.com		
+ Prashant Khairnar  	Lear Corporation 	jdoe@lear.com		
+ Kaivalya Vishnu  	Bank of America Merrill Lynch 	jane.doe@baml.com		
+ David Hurst  	SunTrust 	jane.doe@suntrust.com		
+ Ankur Garg  	Citibank India 	jane.doe@citi.com		
+ Vaman Sabharwal  	Barclays 	jane.doe@barcap.com		
+ Vinit Jain  	American Express 	janedoe@americanexpress.com		
+ Emmanuel Kasongo  	Prudential Financial 	jane.doe@prudential.com		
+ Mainak Das  	Credit Suisse 	jane.doe@credit-suisse.com		
+ Vijai Anandh Venkataraman  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Poornima Gupta  	Royal Bank of Scotland Business 	jane.doe@rbs.com		
+ Kanti Bejjavarapu  	Oracle 	jane.doe@oracle.com		
+ Sander van den Bergh  	J.P. Morgan 	jane.doe@jpmorgan.com		
+" Hitendera Dubey, PMP, AgilePM, MSP, Black Belt  "	HSBC 	janedoe@hsbc.com		
+ Neynes Ladha  	BT 	jane.doe@bt.com		
+ Marcus Johnson  	Highmark Health 	jane.doe@highmark.com		
+ Nasreen Shoukath  	Morgan Stanley 	jane.doe@morganstanley.com		
+ Senad H. Arnautovic  	Citi 	jane.doe@citigroup.com		
+ Pritiman Sarkar  	Karvy Fintech 			
+ Manoj Gade  	Omega Healthcare Management Services Private Limited 	jane.doe@omegahms.com		
+ Lon Adams  	Bank of America 	jane.doe@bankofamerica.com		
+ Rajganesh Ramachandran  	Ford Motor Company 	janedoe@ford.com		
+ Karthik Ramakrishnan  	Societe Generale Global Solution Centre 			
+ Rich Wigstone  	Northern Trust Corporation 	jane.doe@northerntrust.com		
+ Rajeev Jha  	Aditya Birla Group 	jane.doe@adityabirla.com		
+ Saravanan Chettiar  	Aspen Dental 	janedoe@aspendental.com		
+ Jason Hummel  	Citi 	jane.doe@citigroup.com		
+ Brenton Carr  	Fidelity Investments 	jane.doe@fidelity.com		
+ Saurabh Kanbarkar  	HSBC 	janedoe@hsbc.com		
+ Brad Shaink  	Houston Methodist 	jdoe@houstonmethodist.org		
+ Rajesh Raj  	Jio 	doe@jio.com		
+ Ramana Chamarty  	Fidelity Investments 	jane.doe@fidelity.com		
+ Ryan Smith  	Merrill Lynch 	jane_doe@ml.com		
+" Eduard de Vries, MBA  "	SSM Health 	jane.doe@ssmhealth.com		
+ Daniel C.  	Citi 	jane.doe@citigroup.com		
+ Prashant Kaitkay  	PwC 	jane.doe@pwc.com		
+ Ashish Sharma  	Equitas Small Finance Bank 	janedoe@equitas.in		
+ Gary Bigley  	BlackRock 	jane.doe@blackrock.com		
+ Nagy Somasetty  	AIG 	jane.doe@aig.com		
+ Rajnish Khare  	HDFC Bank 	jane.doe@hdfcbank.com		
+ Sushma Akunuru  	Bank of America 	jane.doe@bankofamerica.com		
+ Felix Baumer  	UBS 	jane.doe@ubs.com		
+" Harley Hess, EMBB  "	Wells Fargo - Home Lending 	jane.doe@wellsfargo.com		
+ Sandeep Roy  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Rajat Jain  	Citi 	jane.doe@citigroup.com		
+ Nathanael Anderson  	M&T Bank 	jdoe@mtb.com		
+ Manohara R  	Vodafone 	jane.doe@vodafone.com		
+ Hilary Jackson  	Capital One 	jane.doe@capitalone.com		
+ Anindya Ray  	Citi 	jane.doe@citigroup.com		
+ Sarbojit Mishra  	Vodafone Idea Limited 	jane.doe@ideacellular.com		
+ Sudip Gupta  	Morgan Stanley 	jane.doe@morganstanley.com		
+ Lee Wright  	HSBC Global Banking and Markets 	jane.doe@hsbcib.com		
+ Sushil Nanda  	State Street 	janedoe@statestreet.com		
+ Felix Oliver  	UBS 	jane.doe@ubs.com		
+ Subhadip Ghosh  	BNY Mellon 	jane.doe@bnymellon.com		
+ Mihir Vaidya  	Nomura 	jane.doe@nomura.com		
+ Mark Brocklehurst  	Lloyds Banking Group 	jane.doe@lloydsbanking.com		
+ Karan Mehta  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Shirish Sabnis  	John Deere 	janedoe@johndeere.com		
+ Don Levillard  	Willis Towers Watson 	jane.doe@towerswatson.com		
+ Prasad Panchagnula  	ANZ 	jane.doe@anz.com		
+ YOGESH PAWAR  	Credit Suisse 	jane.doe@credit-suisse.com		
+ Shripriya Srinivasan  	Citi 	jane.doe@citigroup.com		
+ Yoshi Nomura  	PwC 	jane.doe@pwc.com		
+ Pius Raj  	Citi 	jane.doe@citigroup.com		
+ Anish Parulekar  	Axis Bank 	jane.doe@axisbank.com		
+ Prashanth Kiran Rao  	UnitedHealth Group 	jane_doe@uhg.com		
+ Mohan Sundaram Krishnasamy  	Nokia Bell Labs 	�jane.doe@nokia.com		
+ Pankaj Singh  	BNY Mellon 	jane.doe@bnymellon.com		
+ Manohar Atkuri  	USAA 	jane.doe@usaa.com		
+ Russell Laws  	Lincoln Financial Group 	jane.doe@lfg.com		
+ Jerry Chen  	BT 	jane.doe@bt.com		
+ Shahrokh Barati  	UBS 	jane.doe@ubs.com		
+ Ashutosh Kumar  	Barclays 	jane.doe@barcap.com		
+ Vikram Vardhan  	Optum (formerly Alere Wellbeing) 	jane.doe@optum.com		
+ Manik Ahluwalia  	AmericanExpress 	janedoe@americanexpress.com		
+ Richard Hanzl  	General Motors 	jane.doe@gm.com		
+ Hemant Pradhan  	JPMorgan Chase 	jane.doe@jpmorgan.com		
+ Ehteshamul H	Principal Financial Group 	jane@exchange.principal.com		
+ Don Paolilla  	Deutsche Bank 	jane.doe@db.com		
+ Chetan Jadhav  	Citi 	jane.doe@citigroup.com		
+ Josna Gibil  	Citi 	jane.doe@citigroup.com		
+ Ravi Krishnamurthy  	Fidelity Business Services Company India Private Limited 	jane.doe@fidelity.com		
+ Dan Woodward  	Assurant 	jane.doe@assurant.com		
+ Matthew Halko  	Citi 	jane.doe@citigroup.com		
+ Atul Pathak  	Yes Bank 			
+ Chandrasekar Srivatsa PMP  	Guardian Life 	jane_doe@glic.com		
+ Salil Telang  	Bank of the West 	jane.doe@bankofthewest.com		
+ Paul Ryan  	UBS 	jane.doe@ubs.com		
+ Swaminathan Krishnamoorthy  	Fullerton India Credit Company Ltd. 			
+ Gareth Innes  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Nishant Jain  	Boston Scientific 	jane.doe@bsci.com		
+ Kiran Yadav  	UBS 	jane.doe@ubs.com		
+ Robert Hill  	Barclays Investment Bank 	jane.doe@barclays.com		
+ Sowmiyanarayanan Kasthuri  	Citibank India 	jane.doe@citi.com		
+ Rakesh Ranjan  	ICICI Bank 	jane.doe@icicibank.com		
+ Meher Sudheer Achampetkar  	ANZ 	jane.doe@anz.com		
+" Mitesh Vora, PRINCE2®, ITIL Expert®, Scrum Master, Agile  "	Utkarsh Small Finance Bank 			
+ Lucky Sharma  	BlackRock 	jane.doe@blackrock.com		
+ Laxminarayan S.  	Credit Suisse 	jane.doe@credit-suisse.com		
+ Manu Shankar  	Bank of America Merrill Lynch 	jane.doe@baml.com		
+ Abhinav Manoria  	Credit Suisse 	jane.doe@credit-suisse.com		
+" Darshanand Singh, FRM  "	Mizuho Americas 	jdoe@mizuho.com		
+ Rick Amos  	Tech Mahindra 	janed@techmahindra.com		
+ Kenneth Kuhn  	Munich Re Digital Partners 	jdoe@munichre.com		
+ Nandini Kini  	Capital One 	jane.doe@capitalone.com		
+ JegadeeshKumar MD  	Tata Communications 	jane.doe@tatacommunications.com		
+ Eric Bush-Moline  	Northern Trust 	jane.doe@northerntrust.com		
+ Richard Tarrant  	CenturyLink 	jane.doe@centurylink.com		
+ Ian Stewart  	SunTrust Bank 	jane.doe@suntrust.com		
+ Paula Pottle  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Mac McNeil  	Synchrony 	jane.doe@synchrony.com		
+ Juliette Posner  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Marshall Lagani  	Securian Financial 	jane.doe@securian.com		
+ James Blackburn  	Georgia State University 	jdoe@gsu.edu		
+ Sugato Sarkar  	The Hartford 	jane.doe@thehartford.com		
+ Chad Marshall  	Bank of America 	jane.doe@bankofamerica.com		
+ Randall Lague  	Fidelity Investments 	jane.doe@fidelity.com		
+ Anuj Shah  	Citi 	jane.doe@citigroup.com		
+ Ken Morton	PNC 	jane.doe@pnc.com		
+ John Nielsen  	Henniges Automotive 	jane.doe@hennigesautomotive.com		
+ Roderick Wilkins  	Capgemini FS GBU 	jane.doe@capgemini.com		
+ Gowrisankar Paramasivam  	Goldman Sachs 	jane.doe@gs.com		
+ Aaron Jones	Blood Brothers Productions 	jane@blood-brother.co.uk		
+ Humberto Curado  	Citi 	jane.doe@citigroup.com		
+ Deepanjan Guha  	ICICI Bank 	jane.doe@icicibank.com		
+ Vaibhav Mahajan 	PwC 	jane.doe@pwc.com		
+ Vinay Kamath  	Volvo IT 	jane.doe@volvo.com		
+ Lynn Drezak  	Prudential Financial 	jane.doe@prudential.com		
+ Matthew Lavoie  	Citizens Financial Group	jane.doe@citizensbank.com		
+ Joseph O'Connor  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Lavakush Tripathi  	Barclays 	jane.doe@barcap.com		
+ Murali Marrapu  	Standard Chartered Bank 	jane.doe@sc.com		
+ Rajeev Sharma  	Tech Mahindra 	janed@techmahindra.com		
+ Erian Laperi  	AT&T 	jane.doe@att.com		
+ Abhinav Gupta  	State Street 	janedoe@statestreet.com		
+ Jonathan P. Camacho  	Bank of the West 	jane.doe@bankofthewest.com		
+ Craig Libby  	USAA 	jane.doe@usaa.com		
+ Jonathan Frech  	Mastercard 	jane@mastercard.us		
+ Anil Narnoli  	Barclays 	jane.doe@barcap.com		
+ Vinod Ethirajan  	Kaiser Permanente 	jane.doe@kp.org		
+ Amit Garg  	Morgan Stanley 	jane.doe@morganstanley.com		
+ Dhrumil Shah  	Bank of America 	jane.doe@bankofamerica.com		
+ ShyamShankar Yadav	Credit Suisse 	jane.doe@credit-suisse.com		
+ Bhumit Devashryee  	JPMorgan Chase & Co	jane.doe@jpmorgan.com		
+ Ramesh Vasamsetti  	HSBC 	janedoe@hsbc.com		
+ Tejas Swadia  	Idea Cellular Ltd 	jane.doe@ideacellular.com		
+ Sanjeet Chatterjee  	ANZ 	jane.doe@anz.com		
+ Kalpesh Pitale  	JPMorgan Chase 	jane.doe@jpmorgan.com		
+ Mark Penny  	Barclays Corporate Banking 	jane.doe@barclays.com		
+ Ankur Bhargava  	Kotak Mahindra Bank Limited	jane.doe@kotak.com		
+ Anadi Mandal  	JPMorgan Chase & Co	jane.doe@jpmorgan.com		
+ Ashish Khandelwal  	BNY Mellon 	jane.doe@bnymellon.com		
+ Michael Washington  	Bank of America 	jane.doe@bankofamerica.com		
+ Sushil Nanda  	State Street 	janedoe@statestreet.com		
+ Nayankumar Bhosale  	Nomura 	jane.doe@nomura.com		
+ Santosh Shanbhag  	Fidelity Investments 	jane.doe@fidelity.com		
+ Vandana Challagundla  	Morgan Stanley 	jane.doe@morganstanley.com		
+ Akansha Kataria  	BlackRock 	jane.doe@blackrock.com		
+ Manish Devatha  	Citi 	jane.doe@citigroup.com		
+ Kanchan Varsha Katare  	American Express 	janedoe@americanexpress.com		
+ Shaily Gupta  	Macquarie Group 	jane.doe@macquarie.com		
+ Pankaj Gupta  	Ericsson 	jane.doe@ericsson.com		
+ Anup Sharma  	Goldman Sachs 	jane.doe@gs.com		
+ Prabha Verghese  	ANZ 	jane.doe@anz.com		
+ Jeremy Dobrick  	BNY Mellon 	jane.doe@bnymellon.com		
+ Kevin Donnelly  	Citi 	jane.doe@citigroup.com		
+ Ravi Kappagantu  	JPMorgan Chase 	jane.doe@jpmorgan.com		
+ Benny Dcosta  	Citi 	jane.doe@citigroup.com		
+ Sumit More  	Credit Suisse 	jane.doe@credit-suisse.com		
+ Sudhirr Nayar  	Diebold 	janedoe@diebold.com		
+ John Cardona  	Synchrony 	jane.doe@synchrony.com		
+ Durga Mohapatra  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Greg A.  	Level 3 Communications 	jane.doe@level3.com		
+ Vivek Venugopalan  	YES BANK 	jane.doe@yesbank.in		
+ Abhishek Ratna  	S&P Global Ratings 	jane.doe@spglobal.com		
+ Brian Allen	TIAA 	jdoe@tiaa-cref.org		
+ Jasjeet Singh  	Vodafone Idea Ltd 	jane.doe@ideacellular.com		
+ Siddhartha Prakash Dwivedi  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Deepika Gandhi  	Royal Bank of Scotland 	jane.doe@rbs.com		
+ Domenic DeBonis	Citi 	jane.doe@citigroup.com		
+ Nickolas Delikaris  	State Street 	janedoe@statestreet.com		
+ Doug Ross  	Sogeti 	jane.doe@sogeti.com		
+ Priyanka Sareen  	Unimoni 			
+ Priscilla Clark  	Citi 	jane.doe@citigroup.com		
+ Travis McLaren  	Verizon 	jane.doe@verizon.com		
+ Ajit Bhor  	Vodafone 	jane.doe@vodafone.com		
+ Anne Gillis  	Travelers 	jdoe@travelers.com		
+ Mitesh Vora  	Price Waterhouse India 	jane.doe@pwc.com		
+ Stuart Smith  	Citi 	jane.doe@citigroup.com		
+ Anisha P	Lloyds Banking Group 	jane.doe@lloydsbanking.com		
+ Austin Pullmann  	USAA 	jane.doe@usaa.com		
+ Nirav Shah  	Barclays Technology Center India 	jane.doe@barclays.com		
+ Madhuri Nalawade  	Citi 	jane.doe@citigroup.com		
+ Saurin Tailor  	J.P. Morgan 	jane.doe@jpmorgan.com		
+ Sandip Tikare  	Tata Motors 	jane.doe@tatamotors.com		
+ Ram Kumar Gorre  	Nokia 	jane.doe@nokia.com		
+ Sumit Chakraborty  	Societe Generale Global Solution Centre 			
+ Syed Abbas Akbar	Bank of America Merrill Lynch 	jane.doe@baml.com		
+ Kishore Changediya  	UBS 	jane.doe@ubs.com		
+ Christopher Gira  	Wells Fargo 	jane.doe@wellsfargo.com		
+" Timothy Cole, PharmD  "	"Brighid Healthcare Solutions, Inc. "			
+ Mina A.  	Dentsu Aegis Network 	jane.doe@dentsuaegis.com		
+ Murali Krishna Kanniganti 	Citi 	jane.doe@citigroup.com		
+ Ravi Guduru  	Sabre Corporation 	jane.doe@sabre.com		
+ Chris T.  	Goldman Sachs 	jane.doe@gs.com		
+ Manny Barriger  	General Motors 	jane.doe@gm.com		
+ Michael Roybal  	AT&T 	jane.doe@att.com		
+ Luke Keenan  	BlackRock 	jane.doe@blackrock.com		
+ Punit Katariya  	Indus Towers Limited 	jane.doe@industowers.com		
+ PRAVEEN KUMAR  	PwC 	jane.doe@pwc.com		
+ Joe Reineman  	Fidelity Investments 	jane.doe@fidelity.com		
+ Akshay Sharma  	Citigroup 	jane.doe@citigroup.com		
+ Steven Wheeler  	Investec 	jane.doe@investec.co.uk		
+ SUBHROJYOTI DEY  	Adani Group 	jane.doe@adani.com		
+ Bradley J.  	Nationwide 			
+ Ajeeta Bakshi  	Bank of America 	jane.doe@bankofamerica.com		
+ Srini Rajagopal  	Credit Suisse 	jane.doe@credit-suisse.com		
+ Jeffrey Watson 	ADP 	jane_doe@ADP.com		
+ John Regan	AT&T 	jane.doe@att.com		
+ Sakhawat Hussain  	Citi 	jane.doe@citigroup.com		
+ Seth Scott	Bloomberg LP 	jdoe@bloomberg.net		
+ Osama Abdalla  	CNA Insurance 	jane.doe@cna.com		
+ Mark Nadel  	PwC 	jane.doe@pwc.com		
+ Rajeev Khanna  	BNY Mellon 	jane.doe@bnymellon.com		
+ Francisco Apetato  	MUFG 	jdoe@us.mufg.jp		
+ Saurabh Mittal  	DBS Bank 	janedoe@dbs.com		
+ Ruta Pithwa  	Morgan Stanley 	jane.doe@morganstanley.com		
+ Austin Graves  	BBVA 	jane.doe@bbva.com		
+ RAJESH MK  	YES BANK 	jane.doe@yesbank.in		
+Pradeep Chatterjee  	Tata Motors Group 	jane.doe@tatamotors.com		
+ Mohit Mahajan  	Barclays 	jane.doe@barcap.com		
+ Naresh S  	HSBC Global Banking and Markets 	jane.doe@hsbcib.com		
+ Shailesh Kumar  	Bank of America 	jane.doe@bankofamerica.com		
+ SAM DALTON  	Vodafone 	jane.doe@vodafone.com		
+ Sandra Williams  	Conduent 	jane.doe@conduent.com		
+" Vishnu Singh SPC, MS, PMP, PMI-ACP, CSP , DevOps, ITIL, CEC  "	U.S. Bank 	jane.doe@usbank.com		
+ Krishna K. Kuppachi  	ADP 	jane_doe@ADP.com		
+ Paul Dyer  	Zurich Insurance Company Ltd 	jane.doe@zurich.com		
+ Kiran Karupakula  	Credit Suisse 	jane.doe@credit-suisse.com		
+ Praveen Kumbnani  	Franklin Templeton Investments 	janedoe@franklintempleton.com		
+ Devdatta Kolarkar  	Capita 	jane.doe@capita.co.uk		
+" Rajesh Lakshman,  "	Gallagher Service Center LLP 	jane_doe@ajg.com		
+ Madhav Malhotra  	Swiss Re 	jane_doe@swissre.com		
+ Subhadeep Bhattacharjee  	Bank of America 	jane.doe@bankofamerica.com		
+ niranjan singiri  	Citizens Bank 	jdoe@citizensebank.com		
+ Rob Measures  	Deutsche Bank 	jane.doe@db.com		
+" Joseph ""Joey"" Paolini  "	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Arvind Sankaran  	Tesla 	jdoe@teslamotors.com		
+ Ilan Pillai  	Morgan Stanley 	jane.doe@morganstanley.com		
+ K Abhilash Padmanabhan  	UBS 	jane.doe@ubs.com		
+ Kiran Jagadish  	ANZ 	jane.doe@anz.com		
+ Mike Griffis  	Freedom Mortgage 	jane.doe@freedommortgage.com		
+ Priya Gopinath  	AIG 	jane.doe@aig.com		
+ Michael S. Goodman  	NTT DATA Services 	jane.doe@nttdata.com		
+ David Soukup  	RB 	jane@rb.com		
+ Tim Crook  	PNC 	jane.doe@pnc.com		
+ Reena Gosrani  	RSA 	jane.doe@uk.rsagroup.com		
+ Sam Gonder  	Goldman Sachs 	jane.doe@gs.com		
+ Pawel Michniuk  	Citi 	jane.doe@citigroup.com		
+ Nitin Dharmadhikari  	Tata Motors 	jane.doe@tatamotors.com		
+ Devendra Patani  	Mahindra Finance 			
+ Niteshkumar Singh Chatrapati  	Nomura 	jane.doe@nomura.com		
+ Sampath Kumar Hanumanth  	ANZ Bank 	jane.doe@anz.com		
+" James Gowen Jr, PMP®  "	Wells Fargo 	jane.doe@wellsfargo.com		
+ Shyamal Mondal  	Bandhan Bank 			
+ Alasdair Cruickshanks  	Equifax 	jane.doe@equifax.com		
+ Mark Dekker  	Act Cleaning and Supply 			
+ Abhijeet Jagtap  	JPMorgan Chase 	jane.doe@jpmorgan.com		
+ Carol S.  	Citizens Bank 	jdoe@citizensebank.com		
+ Dhanunjaya Rao AVN  	Barclays 	jane.doe@barcap.com		
+ Suzanne Shannon  	Travelers 	jdoe@travelers.com		
+ Bipin Chandra  	EDAG India 	jane.doe@edag.de		
+ John Puccetti  	PNC 	jane.doe@pnc.com		
+ Janae Frazier  	Prudential Financial 	jane.doe@prudential.com		
+ Saskia Parnell  	Bank of the West 	jane.doe@bankofthewest.com		
+ Anjan Thakuria  	Western Digital 	jane.doe@wdc.com		
+ Scott Childs  	Kawasaki Robotics 	janedoe@kawasaki.com		
+ Saket Vineet  	YES BANK 	jane.doe@yesbank.in		
+ Pramod Rachamadugu  	Axis Bank Ltd 	jane.doe@axisbank.com		
+ Jeff Farah  	AT&T 	jane.doe@att.com		
+ Patty Hayward  	McKesson 	jane.doe@mckesson.com		
+ Rajive Joshi  	RTI 	jdoe@rti.org		
+ Carl Benda  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Shatha Waheyeb  	Citi 	jane.doe@citigroup.com		
+ Adam Sanders  	Wells Fargo 	jane.doe@wellsfargo.com		
+ Mayank Verma  	Aditya Birla Sun Life Insurance 	jane.doe@adityabirlacapital.com		
+ Franck Chauvin  	Comau 	�jane.doe@comau.com		
+ Anthony DiProspero  	Cigna 	jane.doe@cigna.com		
+ Deepak Rudraiah  	Standard Chartered Bank 	jane.doe@sc.com		
+ John Varin  	BNY Mellon 	jane.doe@bnymellon.com		
+ Mohit Arora  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Murugan Devaraj  	AMS-INDIA 	jane.doe@ams.com		
+ Clint Cooper  	R1 RCM 	jdoe@r1rcm.com		
+ Janmejay Dave 	Citi 	jane.doe@citigroup.com		
+ Joseph Ferdinand  	Northern Trust Corporation 	jane.doe@northerntrust.com		
+ Backiyaraj M  	JPMorgan Chase & Co. 	jane.doe@jpmorgan.com		
+ Navin Nair  	HDFC Life Insurance Company Ltd 	janedoe@hdfclife.com		
+ NEERAJ J.  	BT 	jane.doe@bt.com		
+ Saravana kumar J  	BNY Mellon 	jane.doe@bnymellon.com		
+ Jay Moors  	McKesson 	jane.doe@mckesson.com		
+ Mark Hendricks  	Capital One 	jane.doe@capitalone.com		
+ Vikas Gakhar  	Nokia 	jane.doe@nokia.com		
